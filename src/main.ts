@@ -12,7 +12,7 @@ async function bootstrap() {
     },
   });
 
-  app.use('*', proxy);
+  app.use('/api', proxy);
 
   await app.listen(3000);
 }
